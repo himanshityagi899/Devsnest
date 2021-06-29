@@ -1,0 +1,49 @@
+body {
+  background: radial-gradient(
+    ellipse farthest-corner at 90% 90%,
+    red,
+    yellow 10%,
+    #1e90ff 50%,
+    beige
+  );
+}
+.container {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 550px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+}
+
+.inner-container {
+  border: 5px solid black;
+  box-shadow: 7px 7px 15px rgb(58, 57, 56), 5px 5px 13px rgb(58, 57, 56) inset;
+  padding: 18px;
+  /* margin: 30px; */
+  bottom: 10%;
+  display: grid;
+  width: 520px;
+  height: 520px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+/* .inner-text {
+  padding: 12%;
+  font-size: 35px;
+  text-align: center;
+} */
+.box {
+  display: block;
+  cursor: pointer;
+}
+.active {
+  background-color: #2db421;
+  border-color: #2e83b4;
+}
+.active:hover {
+  background-color: #afeb8d;
+}
